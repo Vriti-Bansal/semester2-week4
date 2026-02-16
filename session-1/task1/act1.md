@@ -1,4 +1,4 @@
-# Activity 1 - static arrays
+# Activity 1 - static arrays#
 
 1. Factorial
 
