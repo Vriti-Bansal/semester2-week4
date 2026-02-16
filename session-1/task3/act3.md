@@ -1,4 +1,4 @@
-# Task 3 - dynamic memory allocation
+# Task 3 - dynamic memory allocation#
 
 1. **Dynamic memory array syntax**
 

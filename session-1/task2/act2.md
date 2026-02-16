@@ -1,6 +1,6 @@
 # Activity 2 - multi-dimensional arrays
 
-1. **Matrix add**
+1. **Matrix add**#
 
 Initialise the values of 2 matrices a and b to 1.
 - This will require a nested loop
