@@ -22,6 +22,17 @@
     Store your answer in d
     print your final answer
     */
+    for (int k=0;k<n;k++){
+      a[k] = (float)(k+1);
+      b[k] = (float)(2*(k+1));
+    }
+    float dot =0.0f;
+    for (int k = 0; k < n; k++) {
+        dot += a[k] * b[k];
+    }
+    d[0] = dot;
+    printf("Dot product = %.2f\n", d[0]);
+
 
     // explicit deallocation of heap memory before exit */
     free(a);
