@@ -1,4 +1,4 @@
-# fgets() and sscanf()
+# fgets() and sscanf()#
 
 1 Write a program using `scanf()` to read 2 integer values from user input in the form `3 + 4 =`
 

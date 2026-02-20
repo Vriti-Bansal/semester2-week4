@@ -1,4 +1,4 @@
-# scanf()
+# scanf()#
 
 1 The provided code `scanf_test.c` is an example of using scanf()
 
