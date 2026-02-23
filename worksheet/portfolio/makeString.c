@@ -1,7 +1,7 @@
 
 /*
-Name:
-Student ID:
+Name:Vriti Bansal
+Student ID:201914016
 */
 
 #include <stdio.h>
@@ -10,10 +10,15 @@ Student ID:
 int main( int argc, char **argv ) {
 
     // define appropriate data to hold your answer
+    char string[100]; 
 
-    // process the command-line data using appropriate string functions
+    strcpy(string,argv[1]);
+    strcat(string,"-");
+    strcat(string,argv[2]);
+    strcat(string,"-");
+    strcat(string,argv[3]);
 
-    printf("%s\n",buffer); // use only this single print statement in your submitted code
+    printf("%s\n",string); // use only this single print statement in your submitted code
 
     return 0;
 }
