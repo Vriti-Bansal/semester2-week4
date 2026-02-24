@@ -1,6 +1,6 @@
 
 /*
- * Dot product of 2 vectors
+ * Dot product of 2 vectors#
  */
 
  #include <stdio.h>

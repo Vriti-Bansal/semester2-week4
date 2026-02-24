@@ -7,8 +7,8 @@
  #include <stdlib.h>
 
  int main( void ) {
-    float a_stack[5];                          // stack array of size 5
-    float *b_heap = calloc(5,sizeof(float));   // heap array of size 5
+    float a_stack[5];                          
+    float *b_heap = calloc(5,sizeof(float));  
 
     // both can be indexed as arrays in the same way
     for( int k=0; k<5; ++k ) {
