@@ -14,12 +14,41 @@
 #include <stdio.h>
 #include <math.h>
 
-int main( int argc, char **argv ) {
+int main(int argc, char **argv) {
+
     double Pi = 3.1415926535897932;
 
-    /*
-    Your code
-    */
+    // Check command-line argument
+    if (argc != 2) {
+        printf("Usage: %s <number_of_terms>\n", argv[0]);
+        return 1;
+    }
+
+    int n = atoi(argv[1]);
+
+    if (n <= 0) {
+        printf("Number of terms must be positive.\n");
+        return 1;
+    }
+
+    double pi_n = 0.0;
+
+    for (int k = 0; k < n; ++k) {
+        double term = 1.0 / (2.0 * k + 1.0);
+
+        if (k % 2 == 0)
+            pi_n += term;
+        else
+            pi_n -= term;
+    }
+
+    pi_n *= 4.0;
+
+    double error = fabs(Pi - pi_n);
+
+    printf("Number of terms: %d\n", n);
+    printf("Computed pi_n:   %.15f\n", pi_n);
+    printf("Error:           %.15f\n", error);
 
     return 0;
 }

@@ -10,13 +10,36 @@
 #include <stdio.h>
 #include <string.h>
 
-int main( int argc, char **argv ) {
+int main(int argc, char **argv) {
 
-    char sentence[200]="";
+    if (argc < 3) {
+        printf("Usage: %s <character> <sentence words...>\n", argv[0]);
+        return 1;
+    }
 
-    /*
-    Your code
-    */
+    char target = argv[1][0];   // character to search for
+    char sentence[200] = "";
+
+    // Concatenate all words from argv[2] onward
+    for (int i = 2; i < argc; ++i) {
+        strcat(sentence, argv[i]);
+
+        // add space between words (except last one)
+        if (i < argc - 1) {
+            strcat(sentence, " ");
+        }
+    }
+
+    printf("Full sentence: %s\n", sentence);
+
+    // Find first occurrence of target character
+    int position = strcspn(sentence, &target);
+
+    if (position < strlen(sentence)) {
+        printf("First occurrence of '%c' at index %d\n", target, position);
+    } else {
+        printf("Character '%c' not found.\n", target);
+    }
 
     return 0;
 }
